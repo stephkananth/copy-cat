@@ -15,10 +15,11 @@ internal class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-        let viewController = UIViewController()
+        let viewController = IngredientsViewController()
         let navigationController = UINavigationController()
         navigationController.pushViewController(viewController, animated: true)
 
+        window = UIWindow()
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
 
