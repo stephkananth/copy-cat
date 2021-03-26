@@ -13,5 +13,8 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
-      - name: Build Project and Run Tests
+      - name: Install Pods
+        run: |
+        pod install --repo-update --clean-install
+      - name: Build Workspace and Run Tests
         run: exec ./.github/scripts/test.sh
