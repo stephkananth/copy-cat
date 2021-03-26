@@ -1,6 +1,0 @@
-framework module Pods_CopyCat {
-  umbrella header "Pods-CopyCat-umbrella.h"
-
-  export *
-  module * { export * }
-}

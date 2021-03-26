@@ -1,6 +1,0 @@
-framework module Pods_CopyCatUITests {
-  umbrella header "Pods-CopyCatUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
