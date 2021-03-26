@@ -8,11 +8,13 @@
 import UIKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    var window: UIWindow?
+internal class AppDelegate: UIResponder, UIApplicationDelegate {
+    internal var window: UIWindow?
 
-    func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    internal func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    ) -> Bool {
         let viewController = UIViewController()
         let navigationController = UINavigationController()
         navigationController.pushViewController(viewController, animated: true)

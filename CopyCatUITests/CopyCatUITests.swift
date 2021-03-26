@@ -7,8 +7,8 @@
 
 import XCTest
 
-class CopyCatUITests: XCTestCase {
-    func test() {
+internal class CopyCatUITests: XCTestCase {
+    internal func test() {
         XCTAssertTrue(true)
     }
 }

@@ -5,11 +5,11 @@
 //  Created by Steph Ananth on 3/26/21.
 //
 
-import XCTest
 @testable import CopyCat
+import XCTest
 
-class CopyCatTests: XCTestCase {
-    func test() {
+internal class CopyCatTests: XCTestCase {
+    internal func test() {
         XCTAssertTrue(true)
     }
 }
