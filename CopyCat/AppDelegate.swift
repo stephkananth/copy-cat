@@ -16,13 +16,11 @@ internal class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         let viewController = IngredientsViewController()
-        let navigationController = UINavigationController()
-        navigationController.pushViewController(viewController, animated: true)
+        let navigationController = UINavigationController(rootViewController: viewController)
 
         window = UIWindow()
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
-
         return window != nil
     }
 }

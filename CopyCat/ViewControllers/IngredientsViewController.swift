@@ -17,12 +17,18 @@ public class IngredientsViewController: UITableViewController {
 
     private func setupNavigationBar() {
         title = "Ingredients"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
-                                                            target: self,
-                                                            action: #selector(addIngredient))
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addIngredient))
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(showNutritionVC))
+        navigationItem.leftBarButtonItem = addButton
+        navigationItem.rightBarButtonItem = doneButton
     }
 
     @objc private func addIngredient() {
         print("HERE")
+    }
+
+    @objc private func showNutritionVC() {
+        let nutritionVC = UIViewController()
+        navigationController?.pushViewController(nutritionVC, animated: true)
     }
 }
