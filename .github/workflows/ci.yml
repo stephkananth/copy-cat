@@ -17,3 +17,5 @@ jobs:
         run: pod install --repo-update --clean-install
       - name: Build Workspace and Run Tests
         run: exec ./.github/scripts/test.sh
+      - name: Gather Code Coverage
+        uses: maxep/spm-lcov-action@0.3.1
