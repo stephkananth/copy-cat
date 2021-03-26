@@ -8,17 +8,20 @@
 import UIKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    var window: UIWindow?
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+internal class AppDelegate: UIResponder, UIApplicationDelegate {
+    internal var window: UIWindow?
+
+    internal func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    ) -> Bool {
         let viewController = UIViewController()
         let navigationController = UINavigationController()
         navigationController.pushViewController(viewController, animated: true)
-        
+
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
-        
+
         return window != nil
     }
 }
